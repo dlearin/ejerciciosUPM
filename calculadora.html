@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
+    <script type="text/javascript"> 
+    
+    function vaciar(){
+
+        document.getElementById("n1").value = "";
+
+
+    }
+
+    function cuadrado(){
+
+        let c = document.getElementById("n1");
+
+        c.value = c.value * c.value;
+
+    }
+    
+    
+    </script>
 </head>
 <body>
-    
+
+Numero:
+
+<input type="text" id="n1" onclick = "vaciar()">
+
+<button onclick = "cuadrado()"> X <sup>2</sup>
+</button>
+
 </body>
 </html>
